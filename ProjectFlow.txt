@@ -1,0 +1,26 @@
+This repository Only contains the APIs for the needed functionalities mentioned.The Api routes can be seen in routes/api.php.
+The Models created as representative of Students and Courses Data table.This Demo is built on Xampp Server using laravel version 7.3,MYSQL,PHP 7.2
+
+
+The API  URLs are as follows :
+
+http://127.0.0.1:8000/api/retrieveStudentsInfoByCourseId/{id}
+http://127.0.0.1:8000/api/retrieveAllCoursesAvailable
+http://127.0.0.1:8000/api/retrieveStudentTableInfoByCourseId/{id}
+http://127.0.0.1:8000/api/createCourse
+http://127.0.0.1:8000/api/modifyCourse/{id}
+http://127.0.0.1:8000/api/modifyCourse/{id}
+http://127.0.0.1:8000/api/retrieveAllStudentsEnrolledData
+http://127.0.0.1:8000/api/retrieveStudentDataToStudent/{id}
+http://127.0.0.1:8000/api/modifyStudent/{id}
+http://127.0.0.1:8000/api/addStudentToCourse/{id}
+
+We have seeders defined for both course and student table and is connected to php Mysql .
+
+The Courses and students table share a has many relationship.Here I defined the model as course_Id in student table as a
+foreign key that references the id on the course table.
+
+Also attempted at adding JWT token based authentication for the APIs as well.
+
+
+
